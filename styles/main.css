@@ -1,3 +1,111 @@
+.footer-social {
+  position: relative;
+  z-index: 10;
+}
+.footer-social a {
+  z-index: 11;
+}
+.footer-social a i {
+  z-index: 12;
+}
+.footer-social a {
+  cursor: pointer;
+}
+.footer-social a i {
+  pointer-events: auto;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+  font-size: 2rem;
+  color: #b3b3b3;
+  position: relative;
+  outline: none;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.footer-social a:active,
+.footer-social a:focus {
+  background: #2563eb22;
+  color: #fff;
+  box-shadow: 0 0 0 2px #2563eb55;
+  transform: scale(0.96);
+}
+.footer-social a:hover {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.15);
+  transform: scale(1.08);
+}
+.footer-social a i {
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  .footer-social {
+    gap: 1rem;
+  }
+  .footer-social a {
+    width: 44px;
+    height: 44px;
+    font-size: 1.7rem;
+  }
+}
+/* Social Media Footer Links */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  font-size: 2rem;
+  color: #b3b3b3;
+  position: relative;
+  outline: none;
+}
+.footer-social a:active,
+.footer-social a:focus {
+  background: #2563eb22;
+  color: #fff;
+  box-shadow: 0 0 0 2px #2563eb55;
+}
+.footer-social a:hover {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.15);
+}
+.footer-social a i {
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  .footer-social a {
+    width: 44px;
+    height: 44px;
+    font-size: 1.7rem;
+  }
+}
 /* Custom fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
