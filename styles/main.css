@@ -1,0 +1,52 @@
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Base styles */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Azure-themed buttons */
+.btn-azure {
+  background-color: #0078D4;
+  transition: all 0.3s ease;
+}
+.btn-azure:hover {
+  background-color: #106EBE;
+  transform: translateY(-2px);
+}
+
+/* Custom service card hover effect */
+.service-card {
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Animated underline for headings */
+.section-heading {
+  display: inline-block;
+  position: relative;
+}
+.section-heading::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  bottom: -8px;
+  left: 25%;
+  background-color: #0078D4;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.section-heading:hover::after {
+  transform: scaleX(1);
+}
+
+/* Form input focus effects */
+.form-input:focus {
+  border-color: #0078D4;
+  box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.2);
+}
