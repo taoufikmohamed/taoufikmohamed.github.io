@@ -1,26 +1,14 @@
+/* Social Media Footer Links */
 .footer-social {
   position: relative;
-  z-index: 10;
-}
-.footer-social a {
-  z-index: 11;
-}
-.footer-social a i {
-  z-index: 12;
-}
-.footer-social a {
-  cursor: pointer;
-}
-.footer-social a i {
-  pointer-events: auto;
-}
-.footer-social {
+  z-index: 10; /* Keeps above possible overlays */
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
 }
+
 .footer-social a {
   display: inline-flex;
   align-items: center;
@@ -29,15 +17,24 @@
   height: 48px;
   border-radius: 50%;
   background: transparent;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
   font-size: 2rem;
   color: #b3b3b3;
+  cursor: pointer;
   position: relative;
   outline: none;
   touch-action: manipulation;
   -webkit-user-select: none;
   user-select: none;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
 }
+
+.footer-social a:hover {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
+  transform: scale(1.08);
+}
+
 .footer-social a:active,
 .footer-social a:focus {
   background: #2563eb22;
@@ -45,15 +42,15 @@
   box-shadow: 0 0 0 2px #2563eb55;
   transform: scale(0.96);
 }
-.footer-social a:hover {
-  background: #2563eb;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.15);
-  transform: scale(1.08);
+* {
+  outline: 1px solid red !important;
 }
+
+/* Icons inside links should not block clicks */
 .footer-social a i {
   pointer-events: none;
 }
+
 @media (max-width: 600px) {
   .footer-social {
     gap: 1rem;
@@ -63,149 +60,4 @@
     height: 44px;
     font-size: 1.7rem;
   }
-}
-/* Social Media Footer Links */
-.footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
-}
-.footer-social a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: transparent;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-  font-size: 2rem;
-  color: #b3b3b3;
-  position: relative;
-  outline: none;
-}
-.footer-social a:active,
-.footer-social a:focus {
-  background: #2563eb22;
-  color: #fff;
-  box-shadow: 0 0 0 2px #2563eb55;
-}
-.footer-social a:hover {
-  background: #2563eb;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.15);
-}
-.footer-social a i {
-  pointer-events: none;
-}
-@media (max-width: 600px) {
-  .footer-social a {
-    width: 44px;
-    height: 44px;
-    font-size: 1.7rem;
-  }
-}
-/* Custom fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
-/* Base styles */
-body {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6;
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-}
-
-.container {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.profile-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1.2em;
-  color: #555;
-}
-
-@media (max-width: 600px) {
-  .container {
-    max-width: 95vw;
-    margin: 10px;
-    padding: 10px;
-  }
-  .profile-img {
-    width: 80px;
-    height: 80px;
-  }
-  h1 {
-    font-size: 1.5em;
-  }
-  p {
-    font-size: 1em;
-  }
-}
-
-/* Azure-themed buttons */
-.btn-azure {
-  background-color: #0078D4;
-  transition: all 0.3s ease;
-}
-.btn-azure:hover {
-  background-color: #106EBE;
-  transform: translateY(-2px);
-}
-
-/* Custom service card hover effect */
-.service-card {
-  transition: all 0.3s ease;
-}
-.service-card:hover {
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-}
-
-/* Animated underline for headings */
-.section-heading {
-  display: inline-block;
-  position: relative;
-}
-.section-heading::after {
-  content: '';
-  position: absolute;
-  width: 50%;
-  height: 3px;
-  bottom: -8px;
-  left: 25%;
-  background-color: #0078D4;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-.section-heading:hover::after {
-  transform: scaleX(1);
-}
-
-/* Form input focus effects */
-.form-input:focus {
-  border-color: #0078D4;
-  box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.2);
 }
