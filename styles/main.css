@@ -1,4 +1,9 @@
 /* Social Media Footer Links */
+
+* {
+  border: none !important;
+}
+
 .footer-social {
   position: relative;
   z-index: 10; /* Keeps above possible overlays */
