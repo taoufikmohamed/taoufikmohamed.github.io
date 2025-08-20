@@ -36,10 +36,13 @@ jobs:
         run: |
           find . -type f ! -path './.git/*' -exec sha256sum {} \; > file-checksums.txt
           cat file-checksums.txt # Optionally upload as artifact for auditing
-
-      - name: Scan for secrets in codebase
-        uses: Yelcho/github-action-secret-scan@v1 # Open source secret scanner
-        continue-on-error: true # Do not fail deploy, but log findings
+      - name: Scan for secrets
+        uses: aquasecurity/trivy-action@v0.9.2
+        with:
+          scan-type: fs
+          scan-ref: .
+          exit-code: 1
+          severity: HIGH,CRITICAL  
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
