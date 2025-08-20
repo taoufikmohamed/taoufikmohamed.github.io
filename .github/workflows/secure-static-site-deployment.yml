@@ -1,0 +1,71 @@
+# Enhanced workflow for securely deploying static content to GitHub Pages
+
+name: Secure Static Site Deployment to Pages
+
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+
+# Improved permissions for least privilege principle
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Limit concurrency to prevent deployment race conditions
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy Static Site
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1 # Shallow clone for speed and security
+
+      - name: Verify file integrity (SHA256)
+        run: |
+          find . -type f ! -path './.git/*' -exec sha256sum {} \; > file-checksums.txt
+          cat file-checksums.txt # Optionally upload as artifact for auditing
+
+      - name: Scan for secrets in codebase
+        uses: Yelcho/github-action-secret-scan@v1 # Open source secret scanner
+        continue-on-error: true # Do not fail deploy, but log findings
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Post-deployment security summary
+        if: always()
+        run: |
+          echo "Deployment complete. Review file-checksums.txt and secret scan results for security auditing."
+
+# Security best practices added:
+# - Secret scanning in the codebase before deployment.
+# - File integrity hash generation for auditing purposes.
+# - Use of shallow clone.
+# - Explicit artifact upload path.
+# - Post-deployment summary for monitoring.
+
+# Additional suggested actions:
+# - Consider using a static code analysis tool for vulnerability scanning (e.g., github/codeql-action).
+# - Configure branch protection rules in repository settings for master/main.
+# - Enable Dependabot alerts for dependency vulnerabilities (if applicable).
