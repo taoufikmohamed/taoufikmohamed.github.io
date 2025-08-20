@@ -37,7 +37,7 @@ jobs:
           find . -type f ! -path './.git/*' -exec sha256sum {} \; > file-checksums.txt
           cat file-checksums.txt # Optionally upload as artifact for auditing
       - name: Scan for secrets
-        uses: aquasecurity/trivy-action@v0.11.2
+        uses: aquasecurity/trivy-action@master
         with:
           scan-type: fs
           scan-ref: .
