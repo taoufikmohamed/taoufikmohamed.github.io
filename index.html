@@ -519,26 +519,130 @@
     </div>
     
     <!-- Premium Iframe Container -->
-    <div class="iframe-container" style="position: relative; border-radius: 20px; overflow: hidden; background: #010409; border: 1px solid rgba(59, 130, 246, 0.2); box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
-        
-        <!-- Loading Spinner (Disappears when loaded) -->
-        <div id="iframe-loader" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: #05070a; z-index: 5;">
-            <div style="width: 40px; height: 40px; border: 3px solid rgba(59, 130, 246, 0.3); border-top-color: #3b82f6; border-radius: 50%; animation: spin 1s linear infinite;"></div>
-        </div>
-        <!-- The Iframe -->
-        <iframe 
-            src="https://taoufikmohamed.github.io/incidentflow-dist/website/" 
-            style="width: 100%; height: 850px; border: none; display: block;"
-            title="IncidentFlow Landing Page"
-            onload="document.getElementById('iframe-loader').style.display = 'none';">
-        </iframe>
-        <!-- Action Overlay (Optional) -->
-        <div style="padding: 15px 30px; background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(8px); border-top: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; align-items: center;">
-            <span style="color: #94a3b8; font-size: 0.9rem;">Interactive Case Study powered by GitHub Pages</span>
-            <a href="https://github.com/taoufikmohamed/incidentflow-dist" target="_blank" style="color: #3b82f6; text-decoration: none; font-weight: 600; font-size: 0.9rem;">View Source Code →</a>
-        </div>
+ <!-- IncidentFlow Project Section -->
+<section
+  id="incidentcore-project"
+  style="
+    padding: 56px 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  "
+>
+  <!-- Local styles scoped to this section -->
+  <style>
+    #incidentcore-project .spinner {
+      width: 38px;
+      height: 38px;
+      border: 3px solid rgba(59, 130, 246, 0.3);
+      border-top-color: #3b82f6;
+      border-radius: 50%;
+      animation: incidentcore-spin 0.9s linear infinite;
+    }
+
+    @keyframes incidentcore-spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <!-- Header -->
+  <div style="text-align: center; margin-bottom: 24px;">
+    <h2 style="font-size: 2.2rem; color: #ffffff; margin-bottom: 8px;">
+      Featured Project: IncidentFlow
+    </h2>
+    <p style="color: #94a3b8; font-size: 1rem;">
+      AI-powered multi-agent MCP server for automated Slack alerts
+    </p>
+  </div>
+
+  <!-- Iframe Card -->
+  <div
+    style="
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #010409;
+      border: 1px solid rgba(59, 130, 246, 0.22);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+    "
+  >
+    <!-- Loader -->
+    <div
+      id="incidentflow-loader"
+      role="status"
+      aria-live="polite"
+      aria-label="Loading IncidentFlow preview"
+      style="
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #05070a;
+        z-index: 5;
+        transition: opacity 0.25s ease;
+      "
+    >
+      <div class="spinner"></div>
     </div>
+
+    <!-- Iframe -->
+    <iframe
+      src="https://taoufikmohamed.github.io/incidentflow-dist/website/"
+      title="IncidentFlow Landing Page"
+      loading="lazy"
+      sandbox="allow-scripts allow-same-origin"
+      referrerpolicy="no-referrer"
+      style="
+        width: 100%;
+        height: min(620px, 70vh);
+        border: none;
+        display: block;
+      "
+      onload="
+        const l = document.getElementById('incidentflow-loader');
+        l.style.opacity = '0';
+        setTimeout(() => l.style.display = 'none', 250);
+      "
+    ></iframe>
+
+    <!-- Footer -->
+    <div
+      style="
+        padding: 12px 22px;
+        background: rgba(15, 23, 42, 0.85);
+        backdrop-filter: blur(8px);
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      "
+    >
+      <span style="color: #94a3b8; font-size: 0.85rem;">
+        Interactive case study · GitHub Pages
+      </span>
+
+      <a
+        href="https://github.com/taoufikmohamed/incidentflow-dist"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="
+          color: #3b82f6;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 0.85rem;
+        "
+      >
+        View Source →
+      </a>
+    </div>
+  </div>
 </section>
+
   <section id="services" class="py-20 bg-white dark:bg-gray-900 relative overflow-hidden">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(59,130,246,.12),transparent_60%)]"></div>
     <div class="container mx-auto px-6 relative">
