@@ -1,9 +1,5 @@
 /* Social Media Footer Links */
 
-* {
-  border: none !important;
-}
-
 .footer-social {
   position: relative;
   z-index: 10; /* Keeps above possible overlays */
@@ -47,10 +43,6 @@
   box-shadow: 0 0 0 2px #2563eb55;
   transform: scale(0.96);
 }
-* {
-  outline: 1px solid red !important;
-}
-
 /* Icons inside links should not block clicks */
 .footer-social a i {
   pointer-events: none;

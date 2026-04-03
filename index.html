@@ -502,12 +502,64 @@
       </div>
       <div class="space-y-6 order-1 md:order-2 reveal">
         <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-100">About Me</h2>
-        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-         Results-driven Cloud Architect with extensive experience in Azure, IaC (Terraform, ARM, PowerShell), CI/CD, and container orchestration. Proven track record across public sector, insurance, energy, healthcare, and telecom, delivering secure, efficient, and cost-optimized cloud transformations.
-         Expert in building scalable delivery platforms with GitHub and Azure DevOps, standardizing CI/CD pipelines and IaC to accelerate delivery without sacrificing governance or compliance. Skilled in repository & pipeline migrations (SVN / Bamboo / Bitbucket → GitHub Enterprise), compliance automation, policy enforcement, and shift-left security (CodeQL, secret scanning, dependency risk management).
-         Partner with engineering teams to replace ad-hoc scripting with reusable workflows and implement actionable observability—enabling faster releases, reduced operational noise, and higher resiliency.
+        <!-- Key metrics -->
+        <div class="grid grid-cols-2 gap-3 mb-6">
+          <div class="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/20 rounded-xl p-4 text-center border border-purple-200/50 dark:border-purple-700/30 reveal">
+            <div class="text-3xl font-black text-purple-600 dark:text-purple-400">8+</div>
+            <div class="text-xs font-semibold text-gray-600 dark:text-gray-400 mt-1">Industries Served</div>
+          </div>
+          <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 dark:from-cyan-900/30 dark:to-cyan-800/20 rounded-xl p-4 text-center border border-cyan-200/50 dark:border-cyan-700/30 reveal">
+            <div class="text-3xl font-black text-cyan-600 dark:text-cyan-400">50+</div>
+            <div class="text-xs font-semibold text-gray-600 dark:text-gray-400 mt-1">GitHub Repositories</div>
+          </div>
+        </div>
 
+        <!-- Enhanced bio -->
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-base">
+          Results-driven <span class="font-semibold text-blue-600 dark:text-blue-400">Cloud Architect</span> with extensive experience in
+          <span class="font-semibold text-purple-600 dark:text-purple-400">Azure</span>, IaC
+          (<span class="font-mono text-xs bg-gray-100 dark:bg-gray-700 px-1.5 py-0.5 rounded">Terraform</span>
+          <span class="font-mono text-xs bg-gray-100 dark:bg-gray-700 px-1.5 py-0.5 rounded">ARM</span>
+          <span class="font-mono text-xs bg-gray-100 dark:bg-gray-700 px-1.5 py-0.5 rounded">PowerShell</span>),
+          CI/CD, and <span class="font-semibold text-cyan-600 dark:text-cyan-400">container orchestration</span>. Expert in building scalable delivery platforms with
+          <span class="font-semibold text-gray-800 dark:text-gray-200">GitHub</span> and
+          <span class="font-semibold text-blue-500 dark:text-blue-400">Azure DevOps</span>, standardizing pipelines and IaC to accelerate delivery without sacrificing governance. Skilled in repo &amp; pipeline migrations
+          (<span class="font-mono text-xs bg-gray-100 dark:bg-gray-700 px-1.5 py-0.5 rounded">SVN / Bamboo / Bitbucket → GitHub Enterprise</span>),
+          <span class="font-semibold text-rose-600 dark:text-rose-400">shift-left security</span> (CodeQL, secret scanning, dependency risk), and actionable
+          <span class="font-semibold text-emerald-600 dark:text-emerald-400">observability</span>—enabling faster releases, reduced operational noise, and higher resiliency.
         </p>
+
+        <!-- Industry sectors -->
+        <div class="mt-4">
+          <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-2">Industries</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300"><i class="fas fa-landmark text-xs"></i> Public Sector</span>
+            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300"><i class="fas fa-shield text-xs"></i> Insurance</span>
+            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-yellow-100 dark:bg-yellow-900/40 text-yellow-700 dark:text-yellow-300"><i class="fas fa-bolt text-xs"></i> Energy</span>
+            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300"><i class="fas fa-heart-pulse text-xs"></i> Healthcare</span>
+            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-100 dark:bg-cyan-900/40 text-cyan-700 dark:text-cyan-300"><i class="fas fa-tower-broadcast text-xs"></i> Telecom</span>
+          </div>
+        </div>
+
+        <!-- 3-pillar expertise cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/60 dark:to-indigo-950/60 rounded-xl p-4">
+            <i class="fas fa-rocket text-blue-500 text-lg mb-2 block"></i>
+            <h4 class="text-xs font-bold text-gray-800 dark:text-gray-200 mb-1">Platform Engineering</h4>
+            <p class="text-xs text-gray-500 dark:text-gray-400">CI/CD · GitHub Actions · Azure DevOps · IaC · Containers</p>
+          </div>
+          <div class="bg-gradient-to-br from-rose-50 to-pink-50 dark:from-rose-950/60 dark:to-pink-950/60 rounded-xl p-4">
+            <i class="fas fa-shield-halved text-rose-500 text-lg mb-2 block"></i>
+            <h4 class="text-xs font-bold text-gray-800 dark:text-gray-200 mb-1">Security &amp; Compliance</h4>
+            <p class="text-xs text-gray-500 dark:text-gray-400">CodeQL · Secret Scanning · Policy Enforcement · ISO 27001</p>
+          </div>
+          <div class="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/60 dark:to-teal-950/60 rounded-xl p-4">
+            <i class="fas fa-chart-line text-emerald-500 text-lg mb-2 block"></i>
+            <h4 class="text-xs font-bold text-gray-800 dark:text-gray-200 mb-1">Observability &amp; FinOps</h4>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Monitoring · Alerting · Cost Optimization · GreenOps</p>
+          </div>
+        </div>
+
         <a href="#contact"
            class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow hover:shadow-glow transition">
           <i class="fas fa-paper-plane"></i> Get in Touch
@@ -515,7 +567,233 @@
       </div>
     </div>
   </section>
-    <!-- Footer -->
+
+  <!-- ===== Open Source Projects ===== -->
+  <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-950 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_25%_60%,rgba(139,92,246,.10),transparent_60%)] pointer-events-none"></div>
+    <div class="container mx-auto px-6 relative">
+      <h2 class="reveal text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800 dark:text-gray-100">
+        <i class="fab fa-github text-purple-500 mr-3"></i> Open Source Projects
+      </h2>
+      <p class="reveal text-center text-sm md:text-base max-w-3xl mx-auto mb-12 text-gray-600 dark:text-gray-300">
+        Published tools, automation frameworks, and infrastructure patterns built from real-world engagements.
+      </p>
+
+      <!-- ★ Featured: SecurityAuditorScanner ★ -->
+      <div class="reveal mb-10">
+        <div class="relative bg-gradient-to-br from-gray-900 via-blue-950 to-purple-950 rounded-2xl p-8 shadow-2xl overflow-hidden">
+          <!-- glow orbs -->
+          <div class="absolute -top-16 -left-16 w-64 h-64 rounded-full bg-blue-600/15 blur-3xl pointer-events-none"></div>
+          <div class="absolute -bottom-16 -right-16 w-64 h-64 rounded-full bg-purple-600/15 blur-3xl pointer-events-none"></div>
+          <!-- Marketplace badge -->
+          <div class="absolute top-5 right-5">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-green-500 to-emerald-400 text-white text-xs font-bold shadow-lg shadow-green-500/30">
+              <i class="fas fa-store text-xs"></i> GitHub Marketplace
+            </span>
+          </div>
+
+          <div class="relative z-10">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg shadow-blue-500/30 flex-shrink-0">
+                <i class="fas fa-shield-halved text-2xl text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-white">SecurityAuditorScanner</h3>
+                <p class="text-blue-300 text-sm">AI-Powered DevSecOps GitHub Action &middot; v2.0.0</p>
+              </div>
+            </div>
+
+            <p class="text-gray-300 leading-relaxed mb-6 max-w-3xl text-sm md:text-base">
+              Scans <span class="text-yellow-300 font-semibold">Python, JavaScript/TypeScript, React, Go, Ruby, Java &amp; PHP</span> repositories for SQL injection, hardcoded secrets, and insecure dependencies. Generates <span class="text-purple-300 font-semibold">AI-assisted fixes via DeepSeek</span> and can auto-create pull requests with remediations — all natively inside GitHub Actions pipelines.
+            </p>
+
+            <!-- Feature tiles -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+              <div class="bg-white/5 rounded-lg p-3 text-center border border-white/10 hover:bg-white/10 transition">
+                <i class="fas fa-bug text-red-400 text-xl mb-1.5 block"></i>
+                <span class="text-white text-xs font-semibold">Vulnerability Scan</span>
+              </div>
+              <div class="bg-white/5 rounded-lg p-3 text-center border border-white/10 hover:bg-white/10 transition">
+                <i class="fas fa-wand-magic-sparkles text-purple-400 text-xl mb-1.5 block"></i>
+                <span class="text-white text-xs font-semibold">AI Auto-Fix</span>
+              </div>
+              <div class="bg-white/5 rounded-lg p-3 text-center border border-white/10 hover:bg-white/10 transition">
+                <i class="fas fa-code-pull-request text-blue-400 text-xl mb-1.5 block"></i>
+                <span class="text-white text-xs font-semibold">Auto PR Creation</span>
+              </div>
+              <div class="bg-white/5 rounded-lg p-3 text-center border border-white/10 hover:bg-white/10 transition">
+                <i class="fas fa-key text-green-400 text-xl mb-1.5 block"></i>
+                <span class="text-white text-xs font-semibold">Secret Detection</span>
+              </div>
+            </div>
+
+            <!-- Language support tags -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-2.5 py-1 rounded-md bg-blue-500/20 text-blue-300 text-xs font-mono border border-blue-500/30">Python</span>
+              <span class="px-2.5 py-1 rounded-md bg-yellow-500/20 text-yellow-300 text-xs font-mono border border-yellow-500/30">JavaScript / TypeScript</span>
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/20 text-cyan-300 text-xs font-mono border border-cyan-500/30">Go</span>
+              <span class="px-2.5 py-1 rounded-md bg-red-500/20 text-red-300 text-xs font-mono border border-red-500/30">Java</span>
+              <span class="px-2.5 py-1 rounded-md bg-green-500/20 text-green-300 text-xs font-mono border border-green-500/30">Ruby</span>
+              <span class="px-2.5 py-1 rounded-md bg-pink-500/20 text-pink-300 text-xs font-mono border border-pink-500/30">PHP</span>
+            </div>
+
+            <!-- CTA buttons -->
+            <div class="flex flex-wrap gap-3">
+              <a href="https://securityauditor.mtaoufik.com" target="_blank" rel="noopener"
+                 class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold text-sm hover:from-emerald-400 hover:to-teal-400 transition shadow-lg shadow-emerald-500/30 hover:-translate-y-0.5">
+                <i class="fas fa-globe"></i> Landing Page
+              </a>
+              <a href="https://github.com/marketplace/actions/securityauditorscanner" target="_blank" rel="noopener"
+                 class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold text-sm hover:from-blue-500 hover:to-purple-500 transition shadow-lg shadow-blue-600/30 hover:-translate-y-0.5">
+                <i class="fas fa-store"></i> View on Marketplace
+              </a>
+              <a href="https://github.com/taoufikmohamed/securityauditor" target="_blank" rel="noopener"
+                 class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/10 border border-white/20 text-white font-semibold text-sm hover:bg-white/20 transition hover:-translate-y-0.5">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+              <a href="https://github.com/sponsors/taoufikmohamed" target="_blank" rel="noopener"
+                 class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-pink-600/80 border border-pink-500/30 text-white font-semibold text-sm hover:bg-pink-500/90 transition hover:-translate-y-0.5">
+                <i class="fas fa-heart"></i> Sponsor
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other pinned repos grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- PlatformLandingZone -->
+        <div class="reveal group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:-translate-y-2 hover:shadow-xl transition">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-lg bg-purple-100 dark:bg-purple-900/40 flex items-center justify-center">
+              <i class="fas fa-layer-group text-purple-600 dark:text-purple-400"></i>
+            </div>
+            <span class="px-2 py-0.5 rounded text-xs font-mono bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">HCL / Terraform</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">PlatformLandingZone</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">Azure Platform Landing Zone with enterprise-grade governance, RBAC, policy assignments, and Terraform-based IaC foundations.</p>
+          <a href="https://github.com/taoufikmohamed/PlatformLandingZone" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-1.5 text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <i class="fab fa-github text-sm"></i> View on GitHub <i class="fas fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- iac-azure -->
+        <div class="reveal group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:-translate-y-2 hover:shadow-xl transition">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center">
+              <i class="fas fa-cloud text-blue-600 dark:text-blue-400"></i>
+            </div>
+            <span class="px-2 py-0.5 rounded text-xs font-mono bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">HCL / Terraform</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">iac-azure</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">Reusable Terraform modules for Azure — networking, compute, storage, and security baselines, ready for CI/CD integration.</p>
+          <a href="https://github.com/taoufikmohamed/iac-azure" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-1.5 text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <i class="fab fa-github text-sm"></i> View on GitHub <i class="fas fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- dmd-cloud -->
+        <div class="reveal group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:-translate-y-2 hover:shadow-xl transition">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-lg bg-cyan-100 dark:bg-cyan-900/40 flex items-center justify-center">
+              <i class="fas fa-diagram-project text-cyan-600 dark:text-cyan-400"></i>
+            </div>
+            <span class="px-2 py-0.5 rounded text-xs font-mono bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">PowerShell</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">dmd-cloud</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">Cloud deployment automation and management toolset — patterns for recurring cloud ops tasks and operational runbooks.</p>
+          <a href="https://github.com/taoufikmohamed/dmd-cloud" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-1.5 text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <i class="fab fa-github text-sm"></i> View on GitHub <i class="fas fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- incidentflow-dist -->
+        <div class="reveal group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:-translate-y-2 hover:shadow-xl transition">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-lg bg-orange-100 dark:bg-orange-900/40 flex items-center justify-center">
+              <i class="fas fa-bell-concierge text-orange-600 dark:text-orange-400"></i>
+            </div>
+            <span class="px-2 py-0.5 rounded text-xs font-mono bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">PowerShell</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">IncidentFlow</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">Incident management platform. Live at <a href="https://incidentflow.mtaoufik.com" class="text-blue-500 underline" target="_blank" rel="noopener">incidentflow.mtaoufik.com</a> — streamlining operational response workflows.</p>
+          <a href="https://github.com/taoufikmohamed/incidentflow-dist" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-1.5 text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <i class="fab fa-github text-sm"></i> View on GitHub <i class="fas fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- diff-dmd -->
+        <div class="reveal group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:-translate-y-2 hover:shadow-xl transition">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-lg bg-green-100 dark:bg-green-900/40 flex items-center justify-center">
+              <i class="fas fa-code-compare text-green-600 dark:text-green-400"></i>
+            </div>
+            <span class="px-2 py-0.5 rounded text-xs font-mono bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">PowerShell</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">diff-dmd</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">DMD V2 — differential analysis tooling for DevOps workflows, enabling change tracking and configuration drift detection across environments.</p>
+          <a href="https://github.com/taoufikmohamed/diff-dmd" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-1.5 text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium">
+            <i class="fab fa-github text-sm"></i> View on GitHub <i class="fas fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- All repos CTA -->
+        <div class="reveal group bg-gradient-to-br from-blue-600 to-purple-700 rounded-xl p-6 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition flex flex-col items-center justify-center text-center min-h-[220px]">
+          <i class="fab fa-github text-5xl text-white mb-4 opacity-90 group-hover:scale-110 transition"></i>
+          <h3 class="text-lg font-bold text-white mb-2">View All 50 Repos</h3>
+          <p class="text-blue-200 text-sm mb-4">Explore all public repositories on GitHub</p>
+          <a href="https://github.com/taoufikmohamed?tab=repositories" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-white/20 border border-white/30 text-white text-sm font-bold hover:bg-white/30 transition">
+            Browse GitHub <i class="fas fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LinkedIn Insights ===== -->
+  <section id="insights" class="py-16 bg-gradient-to-br from-blue-950 via-gray-950 to-purple-950 text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,.12),transparent_65%)] pointer-events-none"></div>
+    <div class="container mx-auto px-6 relative">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="reveal inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-600/30 border border-blue-500/30 mb-6">
+          <i class="fab fa-linkedin text-3xl text-blue-400"></i>
+        </div>
+        <h2 class="reveal text-3xl md:text-4xl font-bold mb-4">Latest Insights &amp; Articles</h2>
+        <p class="reveal text-gray-300 text-sm md:text-base leading-relaxed mb-4">
+          Sharing real-world learnings on <span class="text-blue-300 font-semibold">Cloud Architecture</span>, <span class="text-purple-300 font-semibold">DevSecOps</span>, CI/CD patterns, GitHub platform engineering, and cost optimization from active client engagements.
+        </p>
+        <!-- Topic pills -->
+        <div class="reveal flex flex-wrap justify-center gap-2 mb-8">
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-gray-300 border border-white/15">#AzureCloud</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-gray-300 border border-white/15">#DevSecOps</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-gray-300 border border-white/15">#GitHubActions</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-gray-300 border border-white/15">#IaC</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-gray-300 border border-white/15">#PlatformEngineering</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-gray-300 border border-white/15">#FinOps</span>
+        </div>
+        <div class="reveal flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://www.linkedin.com/in/mohamed-m-taoufik/recent-activity/all/" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold shadow-xl shadow-blue-600/30 transition hover:-translate-y-1">
+            <i class="fab fa-linkedin text-xl"></i> Read Latest Posts
+          </a>
+          <a href="https://www.linkedin.com/in/mohamed-m-taoufik/" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-white/10 border border-white/20 text-white font-bold transition hover:bg-white/20 hover:-translate-y-1">
+            <i class="fas fa-user text-lg"></i> Full LinkedIn Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
 
   <section id="services" class="py-20 bg-white dark:bg-gray-900 relative overflow-hidden">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(59,130,246,.12),transparent_60%)]"></div>
